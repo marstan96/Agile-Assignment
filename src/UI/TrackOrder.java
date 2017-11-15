@@ -5,6 +5,9 @@
  */
 package UI;
 
+import java.util.Arrays;
+import java.util.List;
+
 /**
  *
  * @author renmi
@@ -110,6 +113,8 @@ public class TrackOrder extends javax.swing.JFrame {
 
     private void jcbOrderNumberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcbOrderNumberActionPerformed
         // TODO add your handling code here:
+        List<String> array = Arrays.asList("OR0001", "OR0002", "OR0003", "OR0004", "OR0005");
+              
         if(jcbOrderNumber.getSelectedItem().equals("OR0001"))
         {
             jlbOrderStatus.setText("Processing");
@@ -135,6 +140,7 @@ public class TrackOrder extends javax.swing.JFrame {
             jlbOrderStatus.setText("Received");
             jlbTime.setText("0 minutes");
         }
+                
     }//GEN-LAST:event_jcbOrderNumberActionPerformed
 
     /**
