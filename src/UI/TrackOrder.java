@@ -115,27 +115,27 @@ public class TrackOrder extends javax.swing.JFrame {
         // TODO add your handling code here:
         List<String> array = Arrays.asList("OR0001", "OR0002", "OR0003", "OR0004", "OR0005");
               
-        if(jcbOrderNumber.getSelectedItem().equals("OR0001"))
+        if(jcbOrderNumber.getSelectedItem().equals(array.get(0)))
         {
             jlbOrderStatus.setText("Processing");
             jlbTime.setText("30 minutes");
         }
-        else if(jcbOrderNumber.getSelectedItem().equals("OR0002"))
+        else if(jcbOrderNumber.getSelectedItem().equals(array.get(1)))
         {
             jlbOrderStatus.setText("cooking");
             jlbTime.setText("25 minutes");
         }
-        else if(jcbOrderNumber.getSelectedItem().equals("OR0003"))
+        else if(jcbOrderNumber.getSelectedItem().equals(array.get(2)))
         {
             jlbOrderStatus.setText("packing");
             jlbTime.setText("15 minutes");
         }
-        else if(jcbOrderNumber.getSelectedItem().equals("OR0004"))
+        else if(jcbOrderNumber.getSelectedItem().equals(array.get(3)))
         {
             jlbOrderStatus.setText("Delivering");
             jlbTime.setText("5 minutes");
         }
-        else if(jcbOrderNumber.getSelectedItem().equals("OR0005"))
+        else if(jcbOrderNumber.getSelectedItem().equals(array.get(4)))
         {
             jlbOrderStatus.setText("Received");
             jlbTime.setText("0 minutes");
